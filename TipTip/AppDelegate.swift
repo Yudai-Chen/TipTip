@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserDefaults.standard.register(defaults: [PercentageInfo.first : 10])
+        UserDefaults.standard.register(defaults: [PercentageInfo.second : 18])
+        UserDefaults.standard.register(defaults: [PercentageInfo.third : 20])
+        UserDefaults.standard.register(defaults: ["isNightMode" : false])
         return true
     }
 
